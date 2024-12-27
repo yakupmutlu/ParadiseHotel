@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing Spa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('relaxingspa.jpg') center center/cover no-repeat;
+            height: 50vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .spa-section {
+            padding: 50px 0;
+        }
+        .spa-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .spa-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="text-center">
+        <h1>Relaxing Spa</h1>
+        <p>Rejuvenate your senses with our state-of-the-art spa treatments</p>
+    </div>
+</section>
+
+<!-- Spa Section -->
+<section class="spa-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Spa Services</h2>
+            <p>Indulge in relaxation and tranquility with our luxurious spa treatments.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card spa-card">
+                    <img src="/gallery/aromatherapy.jpg" class="card-img-top" alt="Aromatherapy">
+                    <div class="card-body">
+                        <h5 class="card-title">Aromatherapy</h5>
+                        <p class="card-text">Revitalize your body and mind with soothing essential oils.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card spa-card">
+                    <img src="/gallery/massage.jpg" class="card-img-top" alt="Massage Therapy">
+                    <div class="card-body">
+                        <h5 class="card-title">Massage Therapy</h5>
+                        <p class="card-text">Experience ultimate relaxation with our expert massage treatments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card spa-card">
+                    <img src="/gallery/facial.jpg" class="card-img-top" alt="Facial Treatments">
+                    <div class="card-body">
+                        <h5 class="card-title">Facial Treatments</h5>
+                        <p class="card-text">Glow with our rejuvenating facial therapies tailored to your skin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Home Button -->
+<a href="index.html" class="btn btn-primary back-home">Back to Home</a>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Paradise Hotels. All Rights Reserved.</p>
+        <p>Follow us on <a href="#" class="text-decoration-none text-light">Facebook</a> | <a href="#" class="text-decoration-none text-light">Instagram</a> | <a href="#" class="text-decoration-none text-light">Twitter</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
